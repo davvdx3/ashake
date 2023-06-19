@@ -1,0 +1,50 @@
+/* FOOTER */
+
+.footer {
+    background-color: var(--color-dark-gray);
+    height: 70vh;
+    font-size: 1.6rem;
+    line-height: 2;
+
+    position: relative;
+
+}
+
+.footer__container {
+    width: 1020px;
+    margin: 0 auto;
+
+    padding-top: 3rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer h3 {
+    color: var(--color-white);
+    transition: all, .5s;
+    cursor: pointer;
+}
+
+.footer h3:hover {
+    color: var(--color-orange);
+    transform: scale(1.1);
+}
+
+.footer p {
+    color: var(--color-gray);
+}
+
+.footer__social {
+    font-size: 1.6rems;
+    color: var(--color-white);
+}
+
+.footer__copyright {
+    color: var(--color-white);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    margin-bottom: .5rem;
+}
