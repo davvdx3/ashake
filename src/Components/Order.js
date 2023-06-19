@@ -25,7 +25,7 @@ const Order = () => {
                 ))}
             </table>
             <div className="total">
-                <p>Total:</p>
+                <p>Total: Sum of the food price</p>
             </div>
         </div>
     );
