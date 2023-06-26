@@ -17,9 +17,9 @@ const Reviews = () => {
     return (
         <section className="reviews">
             <h1>REVIEWS</h1>
-            <div className="reviews__container">
+            <div className="reviews__box container">
                 <FaAngleLeft onClick={handlePrev} className="icon" />
-                <div className="review__box">
+                <div className="review">
                     <h4>{`@${Rvs[i].name}`}</h4>
                     <p>{Rvs[i].review}</p>
                 </div>

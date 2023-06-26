@@ -37,22 +37,17 @@ body {
     margin-inline: auto;
 }
 
-
-/* LOGO */
-
-.logo {
+.logo-box {
     font-family: LakkiReddy;
     font-size: 3.6rem;
     text-transform: capitalize;
 
 }
 
-.logo-i {
+.logo {
     color: var(--color-orange);
 }
 
-
-/* ICON */
 .icon {
     font-size: 24px;
     color: var(--color-white);
@@ -68,7 +63,7 @@ body {
     margin: 0 .5rem;
 }
 
-.order {
+.order-icon__box {
     position: fixed;
     bottom: 5rem;
     right: 5rem;
@@ -89,4 +84,25 @@ body {
     font-size: 3.6rem;
     color: var(--color-orange);
     padding: .2rem;
+}
+
+.green {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 100%;
+}
+
+.green span {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
