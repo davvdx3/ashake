@@ -3,94 +3,137 @@
 export const menu = [
     {
         id: 1,
-        typeOfFood: "Eba",
+        name: "Eba & Egusi soup",
         price: 1500,
         image: require("./images/1.jpg")
     },
     {
         id: 2,
-        typeOfFood: "Amala",
-        price: 1200,
+        name: "Amala & stew",
+        price: 3000,
         image: require("./images/2.jpg")
     },
     {
         id: 3,
-        typeOfFood: "Eyan",
+        name: "Eyan",
         price: 2000,
         image: require("./images/3.jpg")
     },
     {
         id: 4,
-        typeOfFood: "Amala",
-        price: 1200,
+        name: "pomo",
+        price: 1000,
         image: require("./images/4.jpg")
     },
     {
         id: 5,
-        typeOfFood: "Eyan",
+        name: "Rice & plantain",
         price: 2000,
         image: require("./images/5.jpg")
     },
     {
         id: 6,
-        typeOfFood: "Amala",
-        price: 1200,
+        name: "beans",
+        price: 1450,
         image: require("./images/6.jpg")
     },
     {
         id: 7,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "jollof rice & fried rice",
+        price: 2300,
         image: require("./images/7.jpg")
     },
     {
         id: 8,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "stew",
+        price: 1700,
         image: require("./images/8.jpg")
     },
     {
         id: 9,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "gbeiri & amala",
+        price: 1200,
         image: require("./images/9.jpg")
     },
     {
         id: 10,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "rice & stew",
+        price: 1400,
         image: require("./images/10.jpg")
     },
     {
         id: 11,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "pepper soup",
+        price: 1400,
         image: require("./images/11.jpg")
     },
     {
         id: 12,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "jollof rice",
+        price: 2700,
         image: require("./images/12.jpg")
     },
     {
         id: 13,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "Eyan",
+        price: 900,
         image: require("./images/13.jpg")
     },
     {
         id: 14,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "Eyan",
+        price: 2400,
         image: require("./images/14.jpg")
     },
     {
         id: 15,
-        typeOfFood: "Eyan",
-        price: 2000,
+        name: "rice & stew",
+        price: 2300,
         image: require("./images/15.jpg")
     },
+    {
+        id: 16,
+        name: "eba & ogbono",
+        price: 1400,
+        image: require("./images/16.jpg")
+    },
+    {
+        id: 17,
+        name: "eba & efo",
+        price: 2600,
+        image: require("./images/17.jpg")
+    },
+    {
+        id: 18,
+        name: "beans",
+        price: 1400,
+        image: require("./images/18.jpg")
+    },
+    {
+        id: 19,
+        name: "efo riro",
+        price: 1700,
+        image: require("./images/19.jpg")
+    },
+    {
+        id: 20,
+        name: "egusi",
+        price: 1900,
+        image: require("./images/20.jpg")
+    },
+    {
+        id: 21,
+        name: "rice",
+        price: 1000,
+        image: require("./images/21.jpg")
+    },
+    {
+        id: 22,
+        name: "jolof rice",
+        price: 1700,
+        image: require("./images/22.jpg")
+    }
+
 ]
 
 export const Rvs = [

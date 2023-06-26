@@ -4,28 +4,29 @@ import './Order.css';
 
 
 const Order = () => {
-    const order = useSelector(state => state.items)
+    const order = useSelector(state => state.order)
+
     return (
-        <div className="order__container">
+        <div className="order-cpt">
             <h1>Order</h1>
-            <table>
-                <tr>
-                    <th>S/N</th>
-                    <th>title</th>
-                    <th>qty</th>
-                    <th>price</th>
-                </tr>
-                {order.map(({ id, typeOfFood, price }) => (
-                    <tr key={id}>
-                        <td>{id}</td>
-                        <td>{typeOfFood}</td>
-                        <td>2</td>
-                        <td>{`#${price}`}</td>
-                    </tr>
-                ))}
-            </table>
+            <div className='order-cpt__container'>
+                <div className='row'>
+                    <span className='row-header'>title</span>
+                    <span className='row-header'>qty</span>
+                    <span className='row-header'>price</span>
+                </div>
+                <ol>
+                    {order.map(({ id, name, qty, price }) => (
+                        <li key={id} className='row'>
+                            <span>{name}</span>
+                            <span>{qty}</span>
+                            <span>{`#${price}`}</span>
+                        </li>
+                    ))}
+                </ol>
+            </div>
             <div className="total">
-                <p>Total: Sum of the food price</p>
+                <p>Total:{``}</p>
             </div>
         </div>
     );

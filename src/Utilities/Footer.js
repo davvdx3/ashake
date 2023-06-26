@@ -4,10 +4,10 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="footer" id="footer">
-            <div className="footer__container">
+            <div className="footer__box container">
                 <div className="footer__col-1">
-                    <div className="logo">
-                        <div className="logo-i">ashake</div>
+                    <div className="logo-box">
+                        <span className="logo">ashake</span>
                     </div>
                     <h3>Contact</h3>
                     <p>ashakeshop@getshop.com</p>

@@ -10,10 +10,7 @@
 
 }
 
-.footer__container {
-    width: 1020px;
-    margin: 0 auto;
-
+.footer__box {
     padding-top: 3rem;
 
     display: grid;

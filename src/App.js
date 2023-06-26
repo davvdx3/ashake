@@ -13,8 +13,16 @@ function App() {
 
   const store = createStore(Reducer,
     {
-      items: [{ id: 1, typeOfFood: "Eba", price: 1500, image: require("./images/1.jpg") }],
+      order: [{
+        id: 1,
+        name: "Eba",
+        qty: 1,
+        price: 1500,
+        image: require("./images/1.jpg")
+      }],
+      plate: 0
     })
+
   return (
     <Provider store={store}>
       <Routes>
