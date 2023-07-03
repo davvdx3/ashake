@@ -13,13 +13,7 @@ function App() {
 
   const store = createStore(Reducer,
     {
-      order: [{
-        id: 1,
-        name: "Eba",
-        qty: 1,
-        price: 1500,
-        image: require("./images/1.jpg")
-      }],
+      order: [],
       plate: 0
     })
 

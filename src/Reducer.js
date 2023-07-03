@@ -18,6 +18,20 @@ const Reducer = (state = [], action = {}) => {
                 plate
             }
         }
+        case 'del': {
+            const order = [...state.order]
+            const newOrder = order.filter((item) => (item.id !== action.payload));
+            return {
+                ...state,
+                order: newOrder
+            }
+        }
+        case 'clr': {
+            return {
+                order: [],
+                plate: 0
+            }
+        }
         default: {
             return {
                 ...state

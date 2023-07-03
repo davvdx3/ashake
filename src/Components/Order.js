@@ -1,10 +1,19 @@
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import './Order.css';
 
 
 
 const Order = () => {
     const order = useSelector(state => state.order)
+    const dispatch = useDispatch();
+
+    const handleDel = (id) => {
+        dispatch({ type: "del", payload: id })
+    }
+
+    const handleClear = () => {
+        dispatch({ type: "clr" })
+    }
 
     return (
         <div className="order-cpt">
@@ -21,12 +30,18 @@ const Order = () => {
                             <span>{name}</span>
                             <span>{qty}</span>
                             <span>{`#${price}`}</span>
+                            <button onClick={() => handleDel(id)}>del</button>
                         </li>
                     ))}
                 </ol>
             </div>
-            <div className="total">
-                <p>Total:{``}</p>
+            <div className="order__sum">
+                <div className="total">
+                    <p>Total cost:{``}</p>
+                </div>
+                <button onClick={handleClear}>
+                    clear
+                </button>
             </div>
         </div>
     );
