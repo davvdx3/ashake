@@ -8,6 +8,7 @@ const Reducer = (state = [], action = {}) => {
             const exist = order.findIndex(item => item.id === action.payload.id)
             if (exist !== -1) {
                 order[exist].qty = order[exist].qty + 1
+                order[exist].price *= order[exist].qty
 
             } else {
                 order.push({ qty: 1, ...action.payload })

@@ -1,10 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux'
+import summarizer from '../summarizer';
+import { FaTrash } from 'react-icons/fa';
 import './Order.css';
-
 
 
 const Order = () => {
     const order = useSelector(state => state.order)
+    const { totalCost } = useSelector(summarizer)
     const dispatch = useDispatch();
 
     const handleDel = (id) => {
@@ -30,14 +32,14 @@ const Order = () => {
                             <span>{name}</span>
                             <span>{qty}</span>
                             <span>{`#${price}`}</span>
-                            <button onClick={() => handleDel(id)}>del</button>
+                            <button onClick={() => handleDel(id)}>{<FaTrash />}</button>
                         </li>
                     ))}
                 </ol>
             </div>
             <div className="order__sum">
                 <div className="total">
-                    <p>Total cost:{``}</p>
+                    <p>Total cost: ${totalCost}</p>
                 </div>
                 <button onClick={handleClear}>
                     clear
