@@ -28,7 +28,10 @@ const Footer = () => {
                     <p>ikoyi</p>
                 </div>
                 <div className="footer__social">
-                    <label>social:<FaFacebookF className="social-icon" /><FaInstagram className="social-icon" /><FaTwitter className="social-icon" /></label>
+                    <label>social:</label>
+                    <FaFacebookF className="social-icon" />
+                    <FaInstagram className="social-icon" />
+                    <FaTwitter className="social-icon" />
                 </div>
             </div>
             <p className="footer__copyright">copyright2023 Ashake. All right reserved</p>

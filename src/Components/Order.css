@@ -1,4 +1,4 @@
-@keyframes slide-in {
+/* @keyframes slide-in {
     0% {
         transform: translateY(-100%);
     }
@@ -6,13 +6,35 @@
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 .order-cpt {
-    max-width: 1020px;
-    margin: 0 auto;
+    font-size: 1.6rem;
 
-    animation: slide-in .5s ease-in
+    position: relative;
+    /* animation: slide-in .5s ease-in */
+}
+
+.order-cpt__icon {
+    position: absolute;
+    /* top: 1rem; */
+    left: 5rem;
+    height: 5rem;
+    width: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    font-size: 2.4rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-orange);
+}
+
+.order-cpt__icon:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white);
 }
 
 .order-cpt h1 {
@@ -30,10 +52,16 @@
     font-size: 1.6rem;
 }
 
+.order-cpt__container .btn {
+    color: var(--color-orange);
+    font-size: 1.6rem;
+}
+
 .row {
     width: 100%;
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-bottom: 1px solid var(--color-orange);
 }
 
@@ -51,8 +79,48 @@ div.row span {
     padding: 2rem 0;
 }
 
-.total {
+li.row span {
+    text-transform: capitalize;
+}
+
+.order-cpt__sum {
+    line-height: 5rem;
+}
+
+.order-cpt__sum div p {
     margin-top: 5rem;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
+}
+
+.order-cpt__sum .btn {
+    font-size: inherit;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.order-cpt__sum .pay {
+    background-color: var(--color-green);
+}
+
+.order-cpt__sum .pay:hover {
+    background-color: var(--color-green-hover);
+}
+
+.order-cpt__sum .pay:active {
+    background-color: var(--color-green);
+}
+
+.order-cpt__sum .clear {
+    background-color: var(--color-orange);
+}
+
+.order-cpt__sum .clear:hover {
+    background-color: var(--color-orange-hover);
+}
+
+.order-cpt__sum .clear:active {
+    background-color: var(--color-orange);
 }

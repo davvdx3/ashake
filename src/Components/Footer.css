@@ -33,8 +33,12 @@
 }
 
 .footer__social {
-    font-size: 1.6rems;
+    font-size: 2.4rems;
     color: var(--color-white);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .footer__copyright {

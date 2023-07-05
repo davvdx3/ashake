@@ -8,6 +8,7 @@ const Menu = () => {
     const handleBuy = (id, name, price, image) => {
         dispatch({ type: 'buy', payload: { id, name, price, image } })
     }
+
     return (
         <section className="menu" id="menu">
             <div className="container">
@@ -24,7 +25,6 @@ const Menu = () => {
                         </div>
                     ))}
                 </div>
-
             </div>
         </section>
     );

@@ -53,6 +53,7 @@
 }
 
 .menu__items div dd h4 {
+    text-transform: capitalize;
     font-size: 1.8rem;
     color: var(--color-orange);
 }
@@ -64,7 +65,7 @@
 
 .menu__items div .btn {
     color: var(--color-white);
-    background-color: rgb(0, 128, 0);
+    background-color: var(--color-green);
     border-radius: 2rem;
     padding: .5rem 3rem;
     border-style: none;
@@ -72,9 +73,9 @@
 }
 
 .menu__items div .btn:hover {
-    background-color: rgb(25, 175, 25);
+    background-color: var(--color-green-hover);
 }
 
 .menu__items div .btn:active {
-    background-color: rgb(0, 128, 0);
+    background-color: var(--color-green);
 }
