@@ -6,12 +6,15 @@
 
 :root {
     --color-orange: #FF3300;
+    --color-orange-hover: #fa4d21;
     --color-orange-trans: rgb(255, 51, 0, .5);
     --color-white: #F5F5F5;
     --color-white-trans: rgba(255, 255, 255, 0.5);
     --color-gray: #6D6D6D;
     --color-gray-trans: rgba(109, 109, 109, 0.5);
     --color-dark-gray: #242424;
+    --color-green: rgb(0, 128, 0);
+    --color-green-hover: rgb(25, 175, 25);
 }
 
 *,
@@ -59,8 +62,15 @@ body {
 
 
 .social-icon {
-    font-size: 16px;
-    margin: 0 .5rem;
+    font-size: 2.4rem;
+    margin: 0 1rem;
+    transition: .5s;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    color: var(--color-orange);
+    transform: scale(1.5);
 }
 
 .order-icon__box {
@@ -105,4 +115,9 @@ body {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 800;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
 }

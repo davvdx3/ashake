@@ -1,5 +1,4 @@
 
-
 export const menu = [
     {
         id: 1,
@@ -126,12 +125,6 @@ export const menu = [
         name: "rice",
         price: 1000,
         image: require("./images/21.jpg")
-    },
-    {
-        id: 22,
-        name: "jolof rice",
-        price: 1700,
-        image: require("./images/22.jpg")
     }
 
 ]
