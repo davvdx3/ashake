@@ -2,7 +2,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import reducerReducer from "./Reducer";
-// import { createStore } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 

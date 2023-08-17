@@ -15,16 +15,6 @@ const Menu = () => {
                 image
             })
         );
-        // if (title && content) {
-        //     dispatch(
-        //       postAdded({
-        //         id: nanoid(),
-        //         title,
-        //         content
-        //       })
-        //     )
-        //   }
-        // dispatch({ type: 'buy', payload: { id, name, price, image } })
     }
 
     return (
