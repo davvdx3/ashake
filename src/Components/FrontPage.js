@@ -16,7 +16,7 @@ const DisplayGreen = ({ plate }) => {
 }
 
 const FrontPage = () => {
-    const plate = useSelector(state => state.plate)
+    const plate = useSelector(state => state.reducer.plate)
 
     return (
         <section className="fp">

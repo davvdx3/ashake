@@ -1,4 +1,5 @@
 import { menu } from "../data";
+import { buy } from '../Reducer';
 import { useDispatch } from "react-redux";
 import './Menu.css';
 
@@ -6,7 +7,24 @@ const Menu = () => {
     const dispatch = useDispatch();
 
     const handleBuy = (id, name, price, image) => {
-        dispatch({ type: 'buy', payload: { id, name, price, image } })
+        dispatch(
+            buy({
+                id,
+                name,
+                price,
+                image
+            })
+        );
+        // if (title && content) {
+        //     dispatch(
+        //       postAdded({
+        //         id: nanoid(),
+        //         title,
+        //         content
+        //       })
+        //     )
+        //   }
+        // dispatch({ type: 'buy', payload: { id, name, price, image } })
     }
 
     return (

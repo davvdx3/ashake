@@ -32,7 +32,12 @@
     border: 2px solid var(--color-orange);
 }
 
-.order-cpt__icon:hover {
+.order-cpt__icon--right {
+    color: var(--color-orange);
+}
+
+.order-cpt__icon:hover,
+.order-cpt__icon--right:hover {
     background-color: var(--color-orange);
     color: var(--color-white);
 }

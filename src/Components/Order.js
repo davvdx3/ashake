@@ -3,15 +3,17 @@ import summarizer from '../summarizer';
 import { FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Order.css';
+import { selectCount, del, clr } from '../Reducer';
+import { FaArrowLeft } from "react-icons/fa";
 
 
 const Order = () => {
-    const order = useSelector(state => state.order)
+    const order = useSelector(selectCount)
     const { totalCost } = useSelector(summarizer)
     const dispatch = useDispatch();
 
     const handleDel = (id) => {
-        dispatch({ type: "del", payload: id })
+        dispatch(del(id));
     }
 
     const handlePay = () => {
@@ -19,17 +21,15 @@ const Order = () => {
     }
 
     const handleClear = () => {
-        dispatch({ type: "clr" })
+        dispatch(clr());
     }
 
     return (
         <div className="order-cpt">
             <div className="container">
-                <div className="order-cpt__icon">
-                    <Link to='/' >
-                        B
-                    </Link>
-                </div>
+                <Link to='/' className="order-cpt__icon">
+                    <FaArrowLeft className='order-cpt__icon--right' />
+                </Link>
                 <h1>Order</h1>
                 <div className='order-cpt__container'>
                     <div className='row'>
